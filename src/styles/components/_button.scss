@@ -1,0 +1,92 @@
+.c-button {
+    padding: rem(13px) rem(20px);
+    border-radius: rem(6px);
+    color: $white;
+    font-weight: 500;
+    background-color: $default;
+
+    @include u-hocus {
+        background-color: darken($default, 8%);
+    }
+
+    &.-disabled {
+        pointer-events: none;
+        color: #b9b9b9;
+        background-color: $light-grey;
+    }
+
+    &.-naked {
+        color: $soft;
+        background-color: transparent;
+    }
+
+    &.-soft {
+        background-color: $soft;
+    }
+
+    &.-dark {
+        background-color: $dark;
+    }
+
+    &.-alternative {
+        color: $alternative;
+        background-color: transparent;
+        border: 1px solid $alternative;
+    }
+
+    &.-xs {
+        padding: rem(7px) rem(15px);
+    }
+
+    &.-fullwidth {
+        width: 100%;
+    }
+
+    &.-pointer-none {
+        pointer-events: none;
+    }
+
+    &.-regular {
+        font-weight: 400;
+    }
+  
+    &.-medium {
+        font-weight: 500;
+    }
+  
+    &.-bold {
+        font-weight: 700;
+    }
+}
+
+.c-button__loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        &:first-child {
+            width: rem(15px);
+            height: rem(15px);
+            border: 2px solid $white;
+            border-bottom-color: transparent;
+            border-radius: 50%;
+            display: inline-block;
+            box-sizing: border-box;
+            animation: rotation 1s linear infinite;
+        }
+
+        &:last-child {
+            margin-left: rem(10px);
+        }
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 

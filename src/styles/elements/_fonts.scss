@@ -1,0 +1,27 @@
+// ==========================================================================
+// Base / Fonts
+// ==========================================================================
+
+@include font-face(
+    $font-sans-serif,
+    "./assets/fonts/tt-norms-pro-regular"
+) {
+    font-style:  normal;
+    font-weight: 400;
+}
+
+@include font-face(
+    $font-sans-serif,
+    "./assets/fonts/tt-norms-pro-medium"
+) {
+    font-style:  normal;
+    font-weight: 500;
+}
+
+@include font-face(
+    $font-sans-serif,
+    "./assets/fonts/tt-norms-pro-bold"
+) {
+    font-style:  normal;
+    font-weight: 700;
+}

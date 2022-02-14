@@ -1,0 +1,43 @@
+.c-swap {
+  max-width: rem(500px);
+  background-color: $white;
+  margin: 0 auto;
+  padding: rem(25px);
+  border-radius: rem(6px);
+  box-shadow: 0 4px 10px 0px rgb(0 0 0 / 3%);
+}
+
+.c-swap__modes {
+  display: flex;
+  justify-content: center;
+}
+
+.c-swap__mode {
+  display: inline-flex;
+
+  &:not(:first-of-type) {
+    margin-left: rem(5px);
+  }
+}
+
+.c-swap__fields {
+  margin-top: rem(35px);
+}
+
+.c-swap__field {
+  &:not(:first-of-type) {
+    margin-top: rem(20px);
+  }
+}
+
+.c-swap__error {
+  font-size: rem(15px);
+  color: $danger;
+  font-weight: 500;
+  text-align: center;
+  margin-top: rem(25px); 
+}
+
+.c-swap__action {
+  margin-top: rem(30px);
+}

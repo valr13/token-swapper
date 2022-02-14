@@ -1,0 +1,29 @@
+.c-nav {
+  box-shadow: 0 4px 10px 0px rgb(0 0 0 / 3%);
+  background-color: $white;
+}
+
+.c-nav__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: rem(13px);
+  padding-bottom: rem(13px);
+}
+
+.c-nav__actions {
+  display: flex;
+}
+
+.c-nav__action {
+  display: inline-flex;
+
+  &.-flex {
+    display: flex;
+    align-items: center;
+  }
+
+  &:not(:first-of-type) {
+    margin-left: rem(10px);
+  }
+}
