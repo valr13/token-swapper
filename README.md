@@ -1,7 +1,7 @@
 # Simple DEX project 
 ### Token Swapper between ERC20 Token and ETH
 
-![Dex screenshot](dex.png)
+![Dex screenshot](dex.mov)
 
 ### Stack
 - Solidity
